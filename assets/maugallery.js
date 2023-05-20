@@ -125,7 +125,7 @@
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
         }
-      });
+      }); 
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
       let imagesCollection = [];
       if (activeTag === "all") {
@@ -146,17 +146,17 @@
         });
       }
       let index = 0,
-        next = null;
+      prev = null;
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i ;
         }
       });
-      next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
-      $(".lightboxImage").attr("src", $(next).attr("src"));
+      prev =
+        imagesCollection[index - 1] 
+        //imagesCollection[imagesCollection.length - 1];
+      $(".lightboxImage").attr("src", $(prev).attr("src"));
     },
     nextImage() {
       let activeImage = null;
@@ -184,7 +184,7 @@
           }
         });
       }
-      let index = 0,
+      let = 0,
         next = null;
 
       $(imagesCollection).each(function(i) {
@@ -192,8 +192,13 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      console.log("clic",next)
+      next = 
+      imagesCollection[index + 1] 
+     // imagesCollection[imagesCollection.length + 1];
+      
       $(".lightboxImage").attr("src", $(next).attr("src"));
+
     },
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
@@ -220,9 +225,9 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
+        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all" style="cursor:pointer">Tous</span></li>';
       $.each(tags, function(index, value) {
-        tagItems += `<li class="nav-item active">
+        tagItems += `<li class="nav-item active "style="cursor:pointer">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
@@ -240,7 +245,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
