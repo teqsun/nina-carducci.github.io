@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
 	<meta charset="UTF-8">
@@ -10,44 +11,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Nina Carducci est une photographe freelance située à Bordeaux au 68 avenue Alsace-Lorraine 33200. Concerts, entreprises, mariages, portraits.
 	Diponible au téléphone du lundi au vendredi de 10h a 19h au numéro suivant : 05 56 67 78 89" />
-	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style"
-		onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+		integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<noscript>
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	</noscript>
-
-	<link rel="preload" href="./assets/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-	<noscript>
 		<link rel="stylesheet" href="./assets/style.css">
-	</noscript>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link rel="preload"
-		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
-	</noscript>
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/maugallery.js"></script>
 	<script defer src="./assets/scripts.js"></script>
-	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
+		integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-	
+
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="instagram" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://nina-carducci.github.io/#contact" />
 	<meta property="author" content="Nina Carducci" />
-	<meta property="og:image" content="assets/images/instagram.png" /> 
-	<meta property="og:description" content="Nina Carducci est une photographe freelance située à Bordeaux, diversifié dans les photos de concerts, mariages, entreprises ou portraits" />
+	<meta property="og:image" content="assets/images/instagram.png" />
+	<meta property="og:description"
+		content="Nina Carducci est une photographe freelance située à Bordeaux, diversifié dans les photos de concerts, mariages, entreprises ou portraits" />
 </head>
 
 <body>
@@ -60,7 +52,8 @@
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img src="assets/images/instagram.png" width="100%" height="100%" alt="instagram"></a></li>
+						target="_blank"><img src="assets/images/instagram.png" width="100%" height="100%"
+							alt="instagram"></a></li>
 			</ul>
 		</div>
 	</header>
@@ -78,8 +71,9 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100"
-							alt="ryoji-iwata">
+						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+							srcset="./assets/images/slider/ryoji-iwata-800.webp 800w, ./assets/images/slider/ryoji-iwata-1200.webp 1200w, ./assets/images/slider/ryoji-iwata-1400.webp 1400w, ./assets/images/slider/ryoji-iwata-1920.webp 1920w"
+							class="d-block w-100" alt="ryoji-iwata">
 					</div>
 					<div class="carousel-item">
 						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
@@ -218,10 +212,10 @@
 		</div>
 	</main>
 	<footer id="contact">
-		
+
 		<div class="container">
 			<div class="informations" itemscope itemtype="https://schema.org/Photograph">
-				
+
 				<div itemprop=”address” itemscope itemtype="https://schema.org/telephone">
 					<span itemprop=”téléphone-tiitre”>
 						<h2>Téléphone</h2>
@@ -240,11 +234,11 @@
 					</span>
 					<span itemprop=”streetAddress”>68 avenue Alsace-Lorraine</span>
 					<span itemprop=”addressLocality”>Bordeaux</span>,
-			
+
 					<span itemprop=”postalCode”>33000</span>
 				</div>
 			</div>
-			
+
 			<div class="form-container">
 				<h2>Une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
@@ -262,7 +256,7 @@
 				<img src="./assets/images/camera.webp" width="100%" height="100%" alt="camera">
 			</div>
 		</div>
-		
+
 	</footer>
 </body>
 
