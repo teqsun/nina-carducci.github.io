@@ -259,6 +259,23 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.informations {
+	margin-right: 20px;
+	
+	height: auto;
+	width: 415px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	max-width: 1320px;
+	padding-right: var(--bs-gutter-x,.75rem);
+    
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -309,7 +326,7 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 
-	#services .container::before{
+	#services .container::before {
 		width: 30%;
 		height: 100%;
 		bottom: 0;
@@ -331,6 +348,11 @@ input[type="submit"] {
 		bottom: 0;
 		right: 0;
 		z-index: -1;
+	}
+	.informations {
+		width: 570px;
+	
+
 	}
 }
 
@@ -369,10 +391,3 @@ input[type="submit"] {
 	}
 }
 
-.informations {
-	margin-right: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 20px;
-}

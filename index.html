@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 
 	<meta charset="UTF-8">
@@ -8,30 +7,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Nina Carducci est une photographe freelance située à Bordeaux au 68 avenue Alsace-Lorraine 33200. Concerts, entreprises, mariages, portraits.
 	Diponible au téléphone du lundi au vendredi de 10h a 19h au numéro suivant : 05 56 67 78 89" />
-	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style"
+		onload="this.onload=null;this.rel='stylesheet'">
+
 	<noscript>
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	</noscript>
 
 	<link rel="preload" href="./assets/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	
+
 	<noscript>
 		<link rel="stylesheet" href="./assets/style.css">
 	</noscript>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+		as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
-		<link	rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
-		
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+
 	</noscript>
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/maugallery.js"></script>
 	<script defer src="./assets/scripts.js"></script>
 	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	
+	<meta name="google-site-verification" content="omUXJOxImT41iMmARpjFtOtFd65HoTruBQjZ6FJ_dWM" />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="instagram" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://nina-carducci.github.io/#contact" />
+	<!-- <meta property="og:image" content="http://example.com/image.jpg" /> -->
+	<meta property="og:description" content="Nina Carducci est une photographe freelance située à Bordeaux, diversifié dans les photos de concerts, mariages, entreprises ou portraits" />
 </head>
 
 <body>
@@ -202,22 +214,33 @@
 		</div>
 	</main>
 	<footer id="contact">
+		
 		<div class="container">
-			<div class="informations">
-				<div>
-					<h2>Mon adresse</h2>
-					<br>68 avenue Alsace-Lorraine
-					<br>33200 Bordeaux.
+			<div class="informations" itemscope itemtype=”https://schema.org/Photograph”>
+				
+				<div itemprop=”address” itemscope itemtype=”https://schema.org/telephone”>
+					<span itemprop=”name”>
+						<h2>Téléphone</h2>
+					</span>
+					<span itemprop=telephone>05 56 67 78 89.</span>
 				</div>
-				<div>
-					<h2>Téléphone</h2>
-					<br> 05 56 67 78 89.
+				<div itemprop=”address” itemscope itemtype=”https://schema.org/openingHours”>
+					<span>
+						<h2>Horaires</h2>
+					</span>
+					<span itemprop=telephone>Du lundi au vendredi de 10 h à 19 h.</span>
 				</div>
-				<div>
-					<h2>Horaires</h2>
-					<br>Du lundi au vendredi de 10 h à 19 h.
+				<div itemprop=”address” itemscope itemtype=”http://schema.org/PostalAddress”>
+					<span>
+						<h2>Adresse</h2>
+					</span>
+					<span itemprop=”streetAddress”>68 avenue Alsace-Lorraine</span>
+					<span itemprop=”addressLocality”>Bordeaux</span>,
+			
+					<span itemprop=”postalCode”>33000</span>
 				</div>
 			</div>
+			
 			<div class="form-container">
 				<h2>Une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
@@ -235,6 +258,7 @@
 				<img src="./assets/images/camera.webp" width="100%" height="100%" alt="camera">
 			</div>
 		</div>
+		
 	</footer>
 </body>
 
